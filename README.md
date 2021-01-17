@@ -30,10 +30,10 @@ To run, simply use `runOTcli.py` with `-t target ID` or `-d disease ID` (below).
 
 ### Development
 
-Currently the program/wrapper code checks for a handful of common errors - argument configuration, search type, query match, etc. 
-Further testing with '[pytest](https://docs.pytest.org)' (/tests) can be ran (below). More planned.
+The program/wrapper code currently checks for a handful of common errors - configuration of arguments, search type, evaluation of best match, etc. 
+A couple further tests with '[pytest](https://docs.pytest.org)' (/tests) can be corroborated (below).
 
 	pytest tests/test_import.py
 	pytest tests/test_run.py
 
-...
+More planned, suggestions welcomed.
