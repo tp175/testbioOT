@@ -1,7 +1,7 @@
 # testbioOT
 
 A short **Python** program/wrapper to query the [Open Targets REST API](https://docs.targetvalidation.org/programmatic-access/rest-api) from the command line (CLI). 
-The Open Targets Platform REST API allows language agnostic access to data available on the Open Targets Platform, for example, to look up a target ID (Ensembl gene) or disease ID (EFO, HP, Orphanet, MONDO).
+The Open Targets Platform REST API allows language agnostic access to data available on the Open Targets Platform, that is, to look up a target ID (Ensembl gene) or disease ID (EFO, HP, Orphanet, MONDO).
 Searching will return data such as names and IDs of orthologues, association counts, approved name and much more. 
 
  - target - A target identifier listed as an Ensembl gene ID
@@ -12,16 +12,16 @@ The program accepts either a target or disease, queries the endpoint, parses res
 ### Requisites
 
 The program requires two packages - '[opentargets](https://opentargets.readthedocs.io/en/latest)' and '[click](https://click.palletsprojects.com)'.  
-To install, simply use pip (below)
+For easy installation, simply use pip (below).
 
 	pip install opentargets
 	pip install click
 
-*Note: see documentations for full instructions / descriptions.*
+*Note: see individual documentations for full instructions/descriptions.*
 
 ### Usage
 
-To run, simply use 'runOTcli.py' with target ID or disease ID (below). 
+To run, simply use 'runOTcli.py' with `-t` target ID or `-d`disease ID (below). 
 
 	python runOTcli.py -t ENSG00000197386
 	python runOTcli.py -d ENSG00000197386
