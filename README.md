@@ -7,7 +7,7 @@ Searching will return data such as names and IDs of orthologues, association cou
  - target - A target identifier listed as an Ensembl gene ID
  - disease - A disease identifier listed as EFO, Orphanet, HP, or MONDO ID
 
-The program/wrapper accepts a target or disease, queries the endpoint, parses results and performs statistics (printed output).
+The program/wrapper accepts a target or disease, queries the endpoint, parses results and performs statistics - output printed (stdout).
 
 ### Requisites
 
@@ -21,13 +21,13 @@ For easy installation, simply use pip (below).
 
 ### Usage
 
-To run, simply use 'runOTcli.py' with `-t` and target ID or `-d` and disease ID (below). 
+To run, simply use 'runOTcli.py' with `-t target ID` or `-d disease ID` (below). 
 
 	python runOTcli.py -t ENSG00000197386
-	python runOTcli.py -d ENSG00000197386
+	python runOTcli.py -d Orphanet_399
 
 *Note: check paths - relative vs absolute.*
 
-### Tests
+### Development
 
-xxx.
+xxx (tests).
