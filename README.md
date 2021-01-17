@@ -7,7 +7,7 @@ Searching will return data such as names and IDs of orthologues, association cou
  - target - A target identifier listed as an Ensembl gene ID
  - disease - A disease identifier listed as EFO, Orphanet, HP, or MONDO ID
 
-The program/wrapper here accepts either a target or disease, queries the endpoint, parses results and performs summary statistics (with outputs printed).
+The program/wrapper accepts a target or disease, queries the endpoint, parses results and performs statistics (printed output).
 
 ### Requisites
 
