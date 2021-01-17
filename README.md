@@ -4,10 +4,10 @@ A short **Python** program/wrapper to query the [Open Targets REST API](https://
 The Open Targets Platform REST API allows language agnostic access to data available on the Open Targets Platform, that is, to look up a target ID (Ensembl gene) or disease ID (EFO, HP, Orphanet, MONDO).
 Searching will return data such as names and IDs of orthologues, association counts, approved name and much more. 
 
- - target - A target identifier listed as an Ensembl gene ID
- - disease - A disease identifier listed as EFO, Orphanet, HP, or MONDO ID
+ - Target - A target identifier listed as an Ensembl gene ID
+ - Disease - A disease identifier listed as EFO, Orphanet, HP, or MONDO ID
 
-The program/wrapper accepts a target or disease, queries the endpoint, parses results and performs statistics - output printed (stdout).
+The program/wrapper accepts a target or disease, queries the endpoint, parses results and performs statistical analysis - printed output (stdout).
 
 ### Requisites
 
@@ -21,7 +21,7 @@ For easy installation, simply use pip (below).
 
 ### Usage
 
-To run, simply use 'runOTcli.py' with `-t target ID` or `-d disease ID` (below). 
+To run, simply use `runOTcli.py` with `-t target ID` or `-d disease ID` (below). 
 
 	python runOTcli.py -t ENSG00000197386
 	python runOTcli.py -d Orphanet_399
@@ -30,4 +30,8 @@ To run, simply use 'runOTcli.py' with `-t target ID` or `-d disease ID` (below).
 
 ### Development
 
-xxx (tests).
+Currently the program/wrapper checks for common errors - argument configuration, search type and match, etc. 
+Further testing with '[pytest](https://docs.pytest.org' (/tests) is included with more planned.
+
+	pytest tests/test_import.py
+	pytest tests/test_import.py
