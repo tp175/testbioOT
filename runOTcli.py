@@ -48,7 +48,7 @@ def main(t, d):
             doScoreStats(search_score)
 
         else:
-            print("please check match (exited) -", [search_id], " vs ", a_for_target.info['query']['target'])
+            print("please check best match (exited) -", [search_id], " vs ", a_for_target.info['query']['target'])
             sys.exit(1)
 
     # Run Analysis re DISEASE (d)
@@ -70,7 +70,7 @@ def main(t, d):
             doScoreStats(search_score)
 
         else:
-            print("please check match (exited) - ", [search_id], " vs ", a_for_disease.info['query']['disease'])
+            print("please check best match (exited) - ", [search_id], " vs ", a_for_disease.info['query']['disease'])
             sys.exit(1)
 
 # xxx
