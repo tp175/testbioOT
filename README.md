@@ -7,21 +7,21 @@ Searching will return data such as names and IDs of orthologues, association cou
  - target - A target identifier listed as an Ensembl gene ID
  - disease - A disease identifier listed as EFO, Orphanet, HP, or MONDO ID
 
-The program accepts either a target or disease, queries the endpoint, parses results and performs summary statistics (with outputs printed).
+The program/wrapper here accepts either a target or disease, queries the endpoint, parses results and performs summary statistics (with outputs printed).
 
 ### Requisites
 
-The program requires two packages - '[opentargets](https://opentargets.readthedocs.io/en/latest)' and '[click](https://click.palletsprojects.com)'.  
+The program/wrapper requires two packages - '[opentargets](https://opentargets.readthedocs.io/en/latest)' and '[click](https://click.palletsprojects.com)'.  
 For easy installation, simply use pip (below).
 
 	pip install opentargets
 	pip install click
 
-*Note: see individual documentations for full instructions/descriptions.*
+*Note: see individual documentations for full instructions.*
 
 ### Usage
 
-To run, simply use 'runOTcli.py' with `-t` target ID or `-d`disease ID (below). 
+To run, simply use 'runOTcli.py' with `-t` and target ID or `-d` and disease ID (below). 
 
 	python runOTcli.py -t ENSG00000197386
 	python runOTcli.py -d ENSG00000197386
